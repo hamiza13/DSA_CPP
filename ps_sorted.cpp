@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-//for sorted array(pair sum optimal)
+//for sorted array(pair sum optimal), time complexity O(n)
 void sorted_array(vector<int> nums, int target){
     vector<int> ans;
     int i = 0, j = nums.size() - 1;
