@@ -24,7 +24,7 @@ bool is_possible(vector<int> & arr, int n, int m, int max_allowed_time){
 }
 int painter_partition(vector<int> & arr, int m){
     int n = arr.size();
-    if(m>n) return -1;
+    if(m > n) return -1;
 
     int start = *max_element(arr.begin(), arr.end());//for maximum value address
     int end = accumulate(arr.begin(), arr.end(),0);// for sum
