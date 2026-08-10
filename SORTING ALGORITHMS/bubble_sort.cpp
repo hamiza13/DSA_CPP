@@ -19,6 +19,14 @@ void bubble_sort(vector<int> & arr, int n){
     }
     
 }
+void print(vector<int> & arr, int n){
+    cout<<"*** BUBBLE SORTING ***"<<endl;
+    for (int i = 0; i < n; i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    cout<<endl;
+}
 
 int main()
 {
@@ -34,12 +42,7 @@ int main()
         cin>>arr[i];
     }
     bubble_sort(arr, n);
-    cout<<"SORTED ARRAY: ";
-    for (int i = 0; i < n; i++)
-    {
-        cout<<arr[i]<<" ";
-    }
-    cout<<endl;
+    print(arr, n);
 
     return 0;
 }
